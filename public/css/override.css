@@ -1,0 +1,47 @@
+body {
+    background: #eae9db;
+}
+
+#main {
+    background: #eae9db;
+}
+
+#topimage {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.row {
+    text-align: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.col-centered {
+    float: none;
+    margin: 0 auto;
+}
+
+.alignlabel {
+    margin-bottom: 20px;
+}
+
+.spacer {
+    margin-top: 40px;
+    /* define margin as you see fit */
+}
+
+p {
+    font-size: 10%;
+}
+
+.vertical-center {
+    min-height: 100%;
+    /* Fallback for browsers do NOT support vh unit */
+    min-height: 100vh;
+    /* These two lines are counted as one :-)       */
+    display: flex;
+    align-items: center;
+}
