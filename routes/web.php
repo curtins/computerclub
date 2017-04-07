@@ -23,11 +23,10 @@ Route::get('/admin', function () {
     return view('admin');
 });
 
-Route::get('/edit/{id}', function () {
-    return view('edit');
-});
+ 
 
 Route::get('select2-autocomplete', 'Select2AutocompleteController@layout');
+Route::get('edit/{id}', 'Select2AutocompleteController@edit');
 //Route::get('/', 'Select2AutocompleteController@layout');
 Route::get('select2-autocomplete-ajax', 'Select2AutocompleteController@dataAjax');
 Route::get('select2-getmember', 'Select2AutocompleteController@getMember');

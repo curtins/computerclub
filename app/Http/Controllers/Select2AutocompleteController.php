@@ -22,6 +22,12 @@ class Select2AutocompleteController extends Controller
             return view('select2');
         }
 
+        public function edit()
+        {
+             
+            return view('edit');
+        }
+
             /**
             * Show the application dataAjax.
             *
@@ -131,7 +137,7 @@ class Select2AutocompleteController extends Controller
  
                //dd($members);
 
-               //$familyprimary = membership::where('GVR_NUMBER', $members->PRIMARY_MEMBER)->get();
+               $familyprimary1 = membership::where('GVR_NUMBER', $members->PRIMARY_MEMBER)->get();
 
                
                // Log::info( 'before view');
@@ -153,6 +159,7 @@ class Select2AutocompleteController extends Controller
                                        ->with('attendancesummary', $attendancesummary) 
                                        ->with('renewalstatus', $expirestatus) 
                                        ->with('memberid', $request->input('id')) 
+                                       ->with('familyprimary', $familyprimary1) 
                                        ->with('transaction', $transaction1);
 
 

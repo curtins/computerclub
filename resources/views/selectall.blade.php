@@ -9,20 +9,48 @@
 
      <div id="main" class="row">
 
+
+
+                   
+
+
+
+
+
                     <!-- sidebar content -->
                     <div id="sidebar" class="col-sm-3">
                         @include('includes.lsidebar')
                     </div>
 
                     <!-- main content -->
+
+                  
+    
+
+
+
                     <div id="content " class="col-sm-6 vertical-center">
                       
                       <table class="table  table-bordered  background: #eae9db;">                       
                           
                         <tbody>
                           <tr><td  ><strong>Name:</strong></td>
-                            <td  >  {{ $members->FIRST_NAME }}, 
-                              {{ $members->LAST_NAME }} - {{$members->GVR_NUMBER}} </td>
+                            <td  >
+                            
+                               
+
+                             <a href="/edit/{{$memberid}}">{{ $members->FIRST_NAME }}, 
+                              {{ $members->LAST_NAME }} - {{$members->GVR_NUMBER}}</a>
+
+
+                            
+                             
+
+
+                              
+                              
+                              
+                              </td>
                          </tr> 
 
                            <tr  >  
@@ -78,7 +106,7 @@
 
 
 
-                          {{--@if (($members->MEMBERSHIP_TYPE) == 'F')
+                          @if (($members->MEMBERSHIP_TYPE) == 'F')
 
                           <tr>  
                             <td  ><strong>Primary Member:<strong></td>
@@ -87,7 +115,7 @@
 
                           @endif
 
-                          --}}
+                           
 
                            
                            
@@ -103,6 +131,9 @@
                       </div>
                        
               </div>
+
+
+            
 
 
              
